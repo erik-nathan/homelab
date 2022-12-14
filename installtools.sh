@@ -74,3 +74,5 @@ echo '--------------------------------------------'
 sudo apt update && sudo apt dist-upgrade -y ;
 sudo apt autoclean ;
 sudo apt autoremove -y
+
+echo 'Author: erik nathan'
