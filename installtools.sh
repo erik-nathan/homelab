@@ -8,10 +8,7 @@ echo '  _| |_  | | | | \__ \ | |_  | (_| | | | | |      | |    | (_) | | (_) | |
 echo ' |_____| |_| |_| |___/  \__|  \__ _| |_| |_|      |_|     \___/   \___/  |_| |___/ '
                                                                                           
 # ----------------------------------------------------------------- #
-# Linguagens -> Python
-# Ferramentas -> Docker, Docker compose, Portainer, Openssh, git
-# Plugins -> powerlevel10k zsh-autosuggstions 
-#            fast-syntax-highlighting zsh-completions
+# script para instalação de ferramentas para incialização de servidor
 # ----------------------------------------------------------------- #                                                                                  
                                                                         
 # ---------------- Removendo travas eventuais do apt -------------- #
