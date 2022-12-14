@@ -1,6 +1,6 @@
 # O meu HomeLab
 
-Tinha um PC antigo e decidi reaproveita-lo e transforma em um servidor.
+Tinha um PC que estava parado e decidi utiliza-lo e transforma em um servidor.
 Sua configuração: processador Intel I5-9, 8GB de memória Ram, 240GB de SSD e 1TB de HD.
 Essa configurações devem suprir tudo que eu pretendo rodar nele. Como admirador do open source em específico do Linux, o sistema operacional que vai rodar ele será o Ubuntu Server.
 
