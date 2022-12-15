@@ -20,8 +20,8 @@ Alguns serviços:
 Para iniciar o servidor, instalar o **Ubuntu Server** e logo após executar o `installtools.sh`, para instalar as ferramentas iniciais, mas antes e preciso da permissão para o script
 
 ```bash
-sudo chmod u+x postinstall.sh
-./postinstall.sh
+sudo chmod u+x installtools.sh
+./installtools.sh
 ```
 
 ## Utilidades
