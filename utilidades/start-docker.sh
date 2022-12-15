@@ -11,5 +11,8 @@ echo ' |____/   \__|  \__ _| |_|     \__|   |____/   \___/   \___| |_|\_\  \___|
 # --------------------------------------- #  
 
 # ---------------- INSTALANDO OS COMPOSES -------------- #
-echo 'example'
-docker-compose -f <diretório>/docker-compose.yaml up -d --force-recreate
+#echo 'example'
+#docker-compose -f <diretório>/docker-compose.yaml up -d --force-recreate
+
+echo 'JENKINS...'
+docker compose -f jenkins/docker-compose.yaml up -d --force-recreate
