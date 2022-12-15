@@ -30,6 +30,6 @@ Dentro do diretório utilidades possui alguns scripts para ajudar a manter o sis
 
 ```bash
 ├── utilidades
-│   └── dockerstart.sh   # script para instalar o portainer e os docker composes
+│   └── dockerstart.sh   # script para instalar os docker composes
 └──
 ```
