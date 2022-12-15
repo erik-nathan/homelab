@@ -70,6 +70,15 @@ docker run -d -p 8000:8000 -p 9000:9000 --name portainer \
 -v portainer_data:/data \
 portainer/portainer-ce:2.9.3
 echo '--------------------------------------------'
+
+# ---------------- INSTALANDO TELEGRAF -------------- #
+echo '- INSTALANDO O TELEGRAF...'
+curl -s https://repos.influxdata.com/influxdb.key | sudo tee /etc/apt/trusted.gpg.d/influxdb.asc >/dev/null
+source /etc/os-release
+echo "deb https://repos.influxdata.com/${ID} ${VERSION_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+sudo apt-get update && sudo apt-get install telegraf
+echo '--------------------------------------------'
+
 # --------------- Finalizando e limpando --------------- #
 sudo apt update && sudo apt dist-upgrade -y ;
 sudo apt autoclean ;
