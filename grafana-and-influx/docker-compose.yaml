@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  influxdb:
+    container_name: influxdb-homelab
+    image: influxdb:latest
+    ports:
+      - '8086:8086'
+    networks:
+      - influxdb
+    volumes:
+      - influxdb-storage:/var/lib/influxdb
+
+  grafana:
+    container_name: grafana-homelab
+    image: grafana/grafana:latest
+    ports:
+      - '3000:3000'
+    networks:
+      - influxdb
+    volumes:
+      - grafana-storage:/var/lib/grafana
+      - ./grafana-provisioning/:/etc/grafana/provisioning
+    depends_on:
+      - influxdb
+
+networks:
+  influxdb:
+
+volumes:
+  influxdb-storage:
+  grafana-storage:
