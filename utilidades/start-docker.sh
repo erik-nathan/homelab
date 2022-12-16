@@ -16,3 +16,6 @@ echo ' |____/   \__|  \__ _| |_|     \__|   |____/   \___/   \___| |_|\_\  \___|
 
 echo 'JENKINS...'
 docker compose -f jenkins/docker-compose.yaml up -d --force-recreate
+
+echo 'GRAFANA E INFLUXDB'
+docker compose -f grafana-and-influx/docker-compose.yaml up -d --force-recreate
