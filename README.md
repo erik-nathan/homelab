@@ -14,6 +14,9 @@ Alguns serviços:
 - n8n
 - Postgres
 - Python
+- Grafana
+- InfluxDB
+- Telegraf
 
 ## Començando o Servidor
 
