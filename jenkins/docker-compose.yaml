@@ -22,7 +22,6 @@ services:
 
 volumes:
   jenkins_home:
-
 networks:
   qualitygate:
 
