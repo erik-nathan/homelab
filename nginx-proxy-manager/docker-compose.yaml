@@ -1,7 +1,9 @@
 version: '3'
 services:
-  app:
+  
+  nginx-proxy:
     image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxymanager
     restart: unless-stopped
     ports:
       - '80:80'
@@ -10,4 +12,10 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
-      
+    networks:
+      - proxy_manager
+
+networks:
+  proxy_manager:
+    name: proxy_manager
+    
